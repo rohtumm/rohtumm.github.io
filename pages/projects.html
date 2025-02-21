@@ -4,59 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="../styles.css">
-    <style>
-        .projects {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .project {
-            text-align: center;
-            max-width: 250px;
-        }
-        .project img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="../styling/projects.css">
 </head>
 <body>
-    <header>
-        <h1>My Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="design.html">Graphic Design</a></li>
-                <li><a href="interests.html">Interests</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="projects">
-            <div class="project">
-                <img src="../images/mlb_project.png" alt="MLB Baseball Swing Prediction">
-                <h3>MLB Batter Swing Prediction Website</h3>
-                <p>A web app that predicts swings in MLB games based on pitch data. <a href="https://devers-swing-analysis.streamlit.app" target="_blank">Check it out</a>.</p>
-            </div>
-            <div class="project">
-                <img src="../images/brain_tumor_paper.png" alt="Brain Tumor Prediction Paper">
-                <h3>Brain Tumor Prediction Paper</h3>
-                <p>A <a href="https://www.medrxiv.org/content/10.1101/2023.10.03.23296522v1.full" target="_blank">research paper</a> analyzing brain tumor predictions using machine learning models.</p>
-            </div>
-            <div class="project">
-                <img src="../images/nueva_sports.png" alt="Nueva Sports Analytics">
-                <h3>Nueva Sports Analytics Website</h3>
-                <p>A website for sports analytics, providing insights into various sports data trends. <a href="https://nuevaschoolsportsanalytics.wordpress.com/" target="_blank">Take a look.</a></p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Rohan Tummala</p>
-    </footer>
+    <h1>Technical Projects</h1>
+    <div class="projects-container">
+        <div class="project">
+            <img src="../images/mlb_project.png" alt="MLB Swing Prediction">
+            <h2>MLB Baseball Swing Prediction Website</h2>
+            <p>A web app that predicts baseball swings based on pitch and game data. <a href="https://devers-swing-analysis.streamlit.app/" target="_blank" >Check it out.</a></p>
+        </div>
+        <div class="project">
+            <img src="../images/brain_tumor_paper.png" alt="Brain Tumor Prediction Paper">
+            <h2>Brain Tumor Prediction Paper</h2>
+            <p><a href="https://www.medrxiv.org/content/10.1101/2023.10.03.23296522v1.full" target="_blank" >Research paper</a> exploring AI-based brain tumor detection methods.</p>  
+        </div>
+        <div class="project">
+            <img src="../images/nueva_sports.png" alt="Nueva Sports Analytics">
+            <h2>Nueva Sports Analytics</h2>
+            <p>A dedicated club that publishes a variety of projects aiming to answer unique questions at the intersection of sports and analytics. <a href="https://nuevaschoolsportsanalytics.wordpress.com/" target="_blank"> Learn more here.</a></p> 
+        </div>
+    </div>
 </body>
 </html>

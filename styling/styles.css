@@ -10,39 +10,88 @@ body {
     justify-content: center;
     height: 100vh;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 h1 {
-    font-size: 4.5em;
-    margin-bottom: 0px;
+    font-size: 4em;
+    margin-bottom: 10px;
 }
+
 p {
     font-size: 1.2em;
     max-width: 700px;
     margin-bottom: 30px;
+    line-height: 1.6;
 }
+
 .links {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     margin-bottom: 30px;
 }
+
 .links a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
     border: 2px solid #000;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
 .links a:hover {
     background: #000;
     color: #fff;
 }
+
 .socials {
     display: flex;
     gap: 15px;
+    justify-content: center;
 }
+
 .socials a img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.socials a img:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .links a {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .socials {
+        gap: 10px;
+    }
+
+    .socials a img {
+        width: 30px;
+        height: 30px;
+    }
 }

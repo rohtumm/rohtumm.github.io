@@ -41,8 +41,11 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
     padding: 20px;
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 .project {
@@ -76,6 +79,12 @@ h1 {
     transform: scale(1.05);
 }
 
+.project-date {
+    font-size: 0.9em !important;
+    color: #666 !important; 
+    margin-top: 5px !important;
+}
+
 .return-home {
     display: block;
     margin-top: 10px;
@@ -89,6 +98,21 @@ h1 {
     text-decoration: underline;
     color: grey
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
+    background-color: #f8f8f8;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
     h1 {

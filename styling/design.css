@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #fff;
     color: #000;
     text-align: center;
@@ -26,6 +26,8 @@ p {
     gap: 20px;
     justify-content: center;
     padding: 20px;
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 .design-gallery img {
@@ -63,6 +65,18 @@ p {
     font-style: italic;
     text-decoration: underline;
     color: grey
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
+    background-color: #f8f8f8;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {

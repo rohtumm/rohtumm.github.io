@@ -66,11 +66,10 @@ p {
 .thumbnail-box {
     background-color: #f8f8f8; 
     padding: 30px;
-    box-shadow: none; 
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1); 
     border-radius: 0px; 
     margin: 50px auto;
-    width: 85%; 
-    max-height: 800px;
+    width: 82%; 
     max-width: 1200px;
 }
 
@@ -217,6 +216,17 @@ footer {
         opacity: 0;
         transform: translateY(20px);
         filter: brightness(80%);
+    }
+
+    .thumbnail-box {
+        background-color: #f8f8f8; 
+        padding: 30px;
+        box-shadow: none; 
+        border-radius: 0px; 
+        margin: 50px auto;
+        width: 85%; 
+        max-height: 800px;
+        max-width: 1200px;
     }
 
     .featured-work-section {
